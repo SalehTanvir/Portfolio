@@ -266,11 +266,11 @@ span {
     margin: 1rem 0 3rem;
 }
 
-.testimonial {
+.achievements {
     background: var(--second-bg-color);
 }
 
-.testimonial-box {
+.achievement-box {
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -278,11 +278,11 @@ span {
     flex-direction: column;
 }
 
-.testimonial .heading {
+.achievement .heading {
     margin-bottom: 5rem;
 }
 
-.testimonial-box img {
+.achievement-box img {
     height: 200px;
     width: 300px;
     border: 3px solid var(--main-color);
@@ -295,7 +295,7 @@ span {
     gap: 3rem;
 }
 
-.testimonial-item {
+.achievement-item {
     min-height: 450px;
     max-width: 450px;
     background: var(--bg-color);
@@ -313,16 +313,16 @@ span {
     transition: 0.3s ease;
 }
 
-.testimonial-item:hover {
+.achievement-item:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
 }
 
-.testimonial-item h2 {
+.achievement-item h2 {
     font-size: 3rem;
 }
 
-.testimonial-item p {
+.achievement-item p {
     font-size: 1.5rem;
     text-align: center;
 }
