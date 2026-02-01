@@ -272,6 +272,88 @@ span {
     margin: 1rem 0 3rem;
 }
 
+.education {
+    background: var(--bg-color);
+}
+
+.education h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.education-item {
+    background: var(--second-bg-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.education-item:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 0.8rem 2rem rgba(83, 152, 255, 0.3);
+    border-color: var(--main-color);
+}
+
+.education-item .education-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 0.2rem solid var(--main-color);
+    padding-bottom: 1rem;
+}
+
+.education-item .education-header h5 {
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.education-item .education-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.education-item .education-body p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 1rem 0;
+    line-height: 1.8;
+}
+
+.education-item .education-body strong {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.education-item .education-body .btn {
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 1rem 2.8rem;
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .achievements {
     background: var(--second-bg-color);
 }
@@ -450,6 +532,20 @@ span {
     .footer {
         padding: 2rem 3%;
     }
+    .education-container {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    .education-item {
+        padding: 2rem;
+    }
+    .education-item .education-header h3 {
+        font-size: 2rem;
+    }
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 991px) {
@@ -510,6 +606,23 @@ span {
     .about-img img {
         width: 70vw;
         margin-top: 4rem;
+    }
+    .education-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0;
+    }
+    .education-item {
+        padding: 2rem;
+    }
+    .education-item .education-header h3 {
+        font-size: 1.8rem;
+    }
+    .education-item .education-body p {
+        font-size: 1.4rem;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
     }
 }
 
