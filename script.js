@@ -18,3 +18,21 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1200,
     loop: true,
 });
+
+const projectImageSliders = document.querySelectorAll('.project-image');
+
+projectImageSliders.forEach((slider, sliderIndex) => {
+    const slides = slider.querySelectorAll('.slide-image');
+
+    if (slides.length <= 1) {
+        return;
+    }
+
+    let currentSlideIndex = 0;
+
+    setInterval(() => {
+        slides[currentSlideIndex].classList.remove('active');
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+        slides[currentSlideIndex].classList.add('active');
+    }, 3000 + sliderIndex * 300);
+});
