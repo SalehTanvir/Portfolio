@@ -181,30 +181,50 @@ span {
     box-shadow: 0 0 1.6rem var(--main-color);
 }
 
-.about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+.skills {
     background: var(--second-bg-color);
 }
 
-.about-img img {
-    width: 25vw;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    object-position: center top;
-    border: 2px solid var(--main-color);
-    border-radius: 50%;
-    box-shadow: 0 0 25px var(--main-color);
-    cursor: pointer;
-    transition: 0.4s ease;
+.skills h2 {
+    text-align: center;
+    margin-bottom: 5rem;
 }
 
-.about-img img:hover {
-    box-shadow: 0 0 25px var(--main-color),
-        0 0 35px var(--main-color),
-        0 0 45px var(--main-color);
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2.5rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.skill-item {
+    background: var(--bg-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 0.8rem 2rem rgba(83, 152, 255, 0.3);
+    border-color: var(--main-color);
+}
+
+.skill-item h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.skill-item p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
 .heading {
@@ -212,23 +232,7 @@ span {
     text-align: left;
 }
 
-.about-content {
-    padding: 0 4rem;
-}
 
-.about-content h2 {
-    text-align: left;
-    line-height: 1.2;
-}
-
-.about-content h3 {
-    font-size: 3rem;
-}
-
-.about-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-}
 
 .projects h2 {
     text-align: center;
