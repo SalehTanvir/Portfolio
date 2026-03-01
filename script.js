@@ -12,7 +12,7 @@ window.onscroll = () => {
 }
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Software Engineer', 'Flutter Developer', 'Frontend Developer(Next Js)'],
+    strings: ['Software Engineer', 'Frontend Developer(Next Js)'],
     typeSpeed: 80,
     backSpeed: 80,
     backDelay: 1200,
