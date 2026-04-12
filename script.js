@@ -2,12 +2,21 @@ let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menu.onclick = () => {
-    menu.classList.toggle('bx-x');
+    menu.classList.toggle('fa-xmark');
+    menu.classList.toggle('fa-bars');
     navbar.classList.toggle('active');
 }
 
+menu.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        menu.click();
+    }
+});
+
 window.onscroll = () => {
-    menu.classList.remove('bx-x');
+    menu.classList.add('fa-bars');
+    menu.classList.remove('fa-xmark');
     navbar.classList.remove('active');
 }
 
