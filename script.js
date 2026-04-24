@@ -45,3 +45,41 @@ projectImageSliders.forEach((slider, sliderIndex) => {
         slides[currentSlideIndex].classList.add('active');
     }, 3000 + sliderIndex * 300);
 });
+
+const trackSectionViews = () => {
+    if (typeof window.gtag !== 'function') {
+        return;
+    }
+
+    const sections = document.querySelectorAll('section[id]');
+    const seenSections = new Set();
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+
+                const sectionId = entry.target.id;
+
+                if (seenSections.has(sectionId)) {
+                    return;
+                }
+
+                seenSections.add(sectionId);
+                window.gtag('event', 'section_view', {
+                    section_id: sectionId,
+                    page_path: window.location.pathname,
+                });
+            });
+        },
+        {
+            threshold: 0.5,
+        }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+};
+
+trackSectionViews();
