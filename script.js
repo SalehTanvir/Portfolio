@@ -20,13 +20,17 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 }
 
-const typed = new Typed('.multiple-text', {
-    strings: ['Software Engineer', 'Frontend Developer(Next Js)'],
-    typeSpeed: 80,
-    backSpeed: 80,
-    backDelay: 1200,
-    loop: true,
-});
+const typedTarget = document.querySelector('.multiple-text');
+
+if (typedTarget) {
+    const typed = new Typed('.multiple-text', {
+        strings: ['Software Engineer', 'Frontend Developer(Next Js)'],
+        typeSpeed: 80,
+        backSpeed: 80,
+        backDelay: 1200,
+        loop: true,
+    });
+}
 
 const projectImageSliders = document.querySelectorAll('.project-image');
 

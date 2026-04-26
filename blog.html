@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1120">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQH157P1SM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-KQH157P1SM');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Tanvir - Blog</title>
+</head>
+
+<body class="blog-page">
+    <header class="header">
+        <a href="index.html#home" class="logo">Md Abu Saleh Tanvir</a>
+        <i class="fa-solid fa-bars" id="menu-icon" aria-label="Open navigation" role="button" tabindex="0"></i>
+        <nav class="navbar">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="index.html#education">Education</a>
+            <a href="index.html#achievements">Achievements</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="blog-hero">
+                <div class="blog-hero-grid">
+                    <div class="blog-hero-copy">
+                        <p class="section-eyebrow">Blog</p>
+                        <h1 class="heading">Build logs, UI notes, and practical ideas from shipping real projects.</h1>
+                        <p>This blog collects short, useful posts about frontend engineering, mobile product work, and the small design decisions that make interfaces feel polished.
+                        </p>
+                        <div class="blog-preview-actions">
+                            <a href="#archive" class="btn">Browse Posts</a>
+                            <a href="index.html#contact" class="btn btn-outline">Work With Me</a>
+                        </div>
+                    </div>
+
+                    <div class="blog-hero-stats" aria-label="Blog highlights">
+                        <div class="blog-stat">
+                            <strong>12+</strong>
+                            <span>notes and tutorials planned</span>
+                        </div>
+                        <div class="blog-stat">
+                            <strong>UI</strong>
+                            <span>design, systems, and polish</span>
+                        </div>
+                        <div class="blog-stat">
+                            <strong>Real</strong>
+                            <span>project lessons from shipping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-spotlight" id="spotlight">
+            <article class="blog-card">
+                <span class="blog-category">Featured</span>
+                <h3>How I design fast, responsive interfaces without losing polish</h3>
+                <p>A practical look at layout rhythm, spacing decisions, and the component structure I use to keep a portfolio feeling intentional on every screen size.</p>
+                <div class="blog-meta">
+                    <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+                    <span><i class="fa-regular fa-calendar"></i> Apr 2026</span>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <span class="blog-category">Currently writing</span>
+                <h3>What I learned building a portfolio that feels premium on mobile</h3>
+                <p>Notes on navigation behavior, content hierarchy, and animation restraint so the page still feels lightweight and easy to scan.</p>
+                <div class="blog-meta">
+                    <span><i class="fa-solid fa-folder-open"></i> Frontend</span>
+                    <span><i class="fa-solid fa-arrow-trend-up"></i> 2026</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="blog-archive" id="archive">
+            <h2 class="heading">Latest <span>Posts</span></h2>
+            <div class="blog-archive-grid">
+                <article class="blog-card">
+                    <span class="blog-category">Workflow</span>
+                    <h3>My process for turning a rough idea into a clean section layout</h3>
+                    <p>A short walkthrough of planning content, setting constraints, and using reusable card patterns to keep the final UI consistent.</p>
+                    <div class="blog-meta">
+                        <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+                        <span><i class="fa-regular fa-comment"></i> Layout</span>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <span class="blog-category">Frontend</span>
+                    <h3>Why I keep a simple design system even for personal projects</h3>
+                    <p>When a small set of tokens, cards, and button styles is enough to ship quickly without letting the interface drift.</p>
+                    <div class="blog-meta">
+                        <span><i class="fa-regular fa-clock"></i> 6 min read</span>
+                        <span><i class="fa-regular fa-comment"></i> System design</span>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <span class="blog-category">Product</span>
+                    <h3>What makes a developer portfolio feel trustworthy</h3>
+                    <p>Signals I look for in a portfolio: clear outcomes, concise content, and enough visual hierarchy to guide attention without noise.</p>
+                    <div class="blog-meta">
+                        <span><i class="fa-regular fa-clock"></i> 3 min read</span>
+                        <span><i class="fa-regular fa-comment"></i> Storytelling</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="blog-newsletter" id="newsletter">
+            <div>
+                <h3>Want a new post when I publish one?</h3>
+                <p>Use the contact page to reach out, or connect with me on LinkedIn if you want to chat about frontend, Flutter, or product UI.</p>
+            </div>
+            <a href="index.html#contact" class="btn">Get in Touch</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/md-abu-saleh-tanvir/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/SalehTanvir" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/Stanvir.23" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+        <p class="copyright">
+            &copy; Md Abu Saleh Tanvir - All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
